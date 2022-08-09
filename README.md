@@ -1,5 +1,5 @@
 # Structure Aggregation for Cross-Spectral Stereo Image Guided Denoising
-Zehua Sheng, Zhu Yu, Xiongwei Liu, Hui-Liang Shen, and Huaqi Zhang
+(Anonymous)
 
 
 
