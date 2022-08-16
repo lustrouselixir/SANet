@@ -277,7 +277,6 @@ class SANet(nn.Module):
         # Load Models
         self.NoiseEst = Noise_Estimation()
         self.StrAgg = Structure_Aggregation()
-        self.StrAgg.load_state_dict(torch.load('models/structure_aggregation_flickr.pkl'))
 
         # Other Layers
         self.max_pooling = nn.MaxPool2d(2)
