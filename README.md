@@ -1,24 +1,24 @@
 # Structure Aggregation for Cross-Spectral Stereo Image Guided Denoising
 (Anonymous)
 
-
-
-
 ## Description
 This model is built in PyTorch 1.6.0 and tested on Ubuntu 18.04 (Python 3.6.13, CUDA 10.0). At present, we provide our pre-trained models on the Flickr1024, the KITTI Stereo 2015, and the PittsStereo-RGBNIR Datasets for quick evaluation. Training codes will be made available soon.
 
 
-## Evaluation on Flickr1024
-The Flickr1024 Dataset can be downloaded at https://yingqianwang.github.io/Flickr1024/.
-Before evaluation, please modify the root path of the dataset and the noise level parameters in `test_flickr.py`. Then you can run
+## Evaluation
+We provide 3 demos to evaluate the example paired images from the Flickr1024 Dataset, the KITTI Stereo 2015 Dataset, the PittsStereo-RGBNIR Dataset, respectively. We also provide an additional demo to evaluate our own captured RGB-NIR stereo paired images with the model trained on the Flickr1024 training set.
 ```
-python test_flickr.py
-```
+# Evaluation on Flickr1024
+python demo_test_denoising_flickr.py
 
-## Evaluation on Single Data
-We also provide an example paired images in the folder `example/` for evaluation. Just modify the image path and the noise level parameters, then run
-```
-python test_single_image.py
+# Evaluation on KITTI Stereo 2015
+python demo_test_denoising_kitti.py
+
+# Evaluation on PittsStereo-RGBNIR
+python demo_test_denoising_pitts.py
+
+# Evaluation on our captured RGB-NIR paired images
+python demo_test_denoising_ours.py
 ```
 
 ## Acknowledgement
